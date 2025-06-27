@@ -129,4 +129,4 @@ MIT License
 
 - [Arduino版StampFly](../StampFly_sandbox/)
 - [ESP-IDF公式ドキュメント](https://docs.espressif.com/projects/esp-idf/)
-- [M5Stack StampS3](https://docs.m5stack.com/en/core/StampS3)
+- [M5Stack StampS3](https://docs.m5stack.com/en/core/StampS3)# StampFly ESP-IDF Update
