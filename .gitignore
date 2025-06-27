@@ -1,0 +1,83 @@
+# ESP-IDF プロジェクト用 .gitignore
+
+# ビルド出力
+build/
+sdkconfig
+sdkconfig.old
+.pio/
+.vscode/
+
+# IDE設定
+.idea/
+*.code-workspace
+.history/
+
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ログファイル
+*.log
+logs/
+*.out
+
+# 一時ファイル
+*~
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Flash download tool
+flash_project_args
+
+# バックアップファイル
+*.bak
+*.backup
+
+# ESP-IDF固有
+managed_components/
+dependencies.lock
+
+# テストデータ
+test_data/
+test_results/
+
+# 設定ファイル（個人用）
+sdkconfig.local
+config.local
+
+# デバッグファイル
+*.core
+core.*
+gdb.txt
+
+# 証明書・キー（セキュリティ）
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+
+# ドキュメント生成ファイル
+docs/_build/
+docs/html/
+docs/latex/
+
+# カバレッジレポート
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# プロファイリング結果
+*.prof
+perf.data*

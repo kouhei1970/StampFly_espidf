@@ -1,0 +1,12 @@
+# StampFly ESP-IDF版 パーティションテーブル
+# ESP32-S3 (16MB Flash) 用設定
+
+# Name,   Type, SubType, Offset,  Size, Flags
+nvs,      data, nvs,     0x9000,  0x6000,
+phy_init, data, phy,     0xf000,  0x1000,
+factory,  app,  factory, 0x10000, 1500K,
+storage,  data, spiffs,  0x190000,3M,
+logs,     data, spiffs,  0x490000,2M,
+params,   data, nvs,     0x690000,256K,
+backup,   data, nvs,     0x6D0000,256K,
+coredump, data, coredump,0x710000,256K,

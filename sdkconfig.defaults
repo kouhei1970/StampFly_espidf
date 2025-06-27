@@ -1,0 +1,44 @@
+# StampFly ESP-IDF版 最小設定（ESP-IDF 5.4対応）
+# ESP32-S3ドローン制御システム用設定
+
+#
+# ターゲット設定
+#
+CONFIG_IDF_TARGET="esp32s3"
+
+#
+# PSRAM無効化（一旦）
+#
+# CONFIG_SPIRAM is not set
+
+#
+# FreeRTOS設定（リアルタイム制御用）
+#
+CONFIG_FREERTOS_HZ=1000
+
+#
+# ログレベル設定
+#
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+CONFIG_LOG_DEFAULT_LEVEL=3
+
+#
+# コンパイラ最適化
+#
+CONFIG_COMPILER_OPTIMIZATION_SIZE=y
+
+#
+# HAL問題回避のため機能無効化
+# 
+# CONFIG_ESP_TLS_USING_MBEDTLS is not set
+# CONFIG_ESP_HTTP_CLIENT_ENABLE_HTTPS is not set
+# CONFIG_ESP_HTTP_SERVER_ENABLE is not set
+# CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP is not set
+# CONFIG_MBEDTLS_HARDWARE_SHA is not set
+
+#
+# コンソール関連を無効化
+#
+# CONFIG_ESP_CONSOLE_UART_DEFAULT is not set
+# CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG is not set
+CONFIG_ESP_CONSOLE_NONE=y
